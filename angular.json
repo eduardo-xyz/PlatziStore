@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "platzi-store"
+    }
+  },
+  "defaultProject": "platzi-store",
+  "cli": {
+    "packageManager": "npm"
+  }
 }
