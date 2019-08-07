@@ -1,13 +1,17 @@
-<h2>Detalle de {{products[1].name}}</h2>
-<div>
-    <span>Código: </span>
-    {{products[1].id}}
-</div>
-<div>
-    <span>Nombre: </span>
-    {{products[1].name}}
-</div>
-<div>
-    <span>Precio: </span>
-    {{products[1].price}}
+<h2>Lista de productos</h2>
+<input #query (keyup)="filter(query.value)">
+<div *ngFor="let product of products">
+    <div>
+        <span>Código: </span>
+        {{product.id}}
+    </div>
+    <div>
+        <span>Nombre: </span>
+        {{product.name}}
+    </div>
+    <div>
+        <span>Precio: </span>
+        {{product.price}}
+    </div>
+    <button (click)="productSelected(product.id)">Comprar</button>
 </div>

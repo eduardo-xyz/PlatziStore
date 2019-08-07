@@ -18,4 +18,14 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {
   }
 
+  productSelected(id: number) {
+    console.info('Product selected ' + id);
+  }
+
+  filter(query: string) {
+    this.products = this.productService.getAll().filter(
+      product => product.name.includes(query)
+    );
+  }
+
 }
