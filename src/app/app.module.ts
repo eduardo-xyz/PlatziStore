@@ -8,13 +8,15 @@ import { ProductsComponent } from './products/products.component';
 import { ProductService } from './services/product.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     PageNotFoundComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
