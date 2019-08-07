@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { AddModule } from './add/add.module';
 import { ProductsComponent } from './products/products.component';
 import { ProductService } from './services/product.service';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent
+    ProductsComponent,
+    PageNotFoundComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
